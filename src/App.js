@@ -1,7 +1,8 @@
 import './App.css';
+import ColorBoxesContainer from './ColorBoxesContainer';
 
 function App() {
-  return <div className="App"></div>;
+  return <ColorBoxesContainer />;
 }
 
 export default App;
