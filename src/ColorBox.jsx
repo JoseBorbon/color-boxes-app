@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import './ColorBox.css';
 
 class ColorBox extends Component {
-  static defaultProps = {
-    shape: 'square',
-  };
   render() {
     return (
       <div
-        id={this.props.color}
-        style={this.props.shape === 'square' ? null : { borderRadius: 150 }}
+        id={this.props.curColor}
+        style={
+          this.props.shape === 'square'
+            ? { borderRadius: 0, border: '2px solid black' }
+            : { borderRadius: 150, border: '2px solid black' }
+        }
+        onClick={this.props.click}
       ></div>
     );
   }
