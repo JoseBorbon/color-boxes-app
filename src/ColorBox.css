@@ -1,77 +1,90 @@
 #red {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: red;
+  flex-grow: 1;
 }
 
 #green {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: green;
+  flex-grow: 1;
 }
 
 #blue {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: blue;
+  flex-grow: 1;
 }
 
 #yellow {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: yellow;
+  flex-grow: 1;
 }
 
 #orange {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: orange;
+  flex-grow: 1;
 }
 
 #pink {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: pink;
+  flex-grow: 1;
 }
 
 #white {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: white;
+  flex-grow: 1;
 }
 
 #black {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: black;
+  flex-grow: 1;
 }
 
 #purple {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: purple;
+  flex-grow: 1;
 }
 
 #magenta {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: magenta;
+  flex-grow: 1;
 }
 
 #cyan {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: cyan;
+  flex-grow: 1;
 }
 
 #indigo {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: indigo;
+  flex-grow: 1;
 }
 
 #teal {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: teal;
+  flex-grow: 1;
 }
