@@ -7,6 +7,7 @@ import colors from './data/colors';
 class ColorBoxesContainer extends Component {
   static defaultProps = {
     colors,
+    numBoxes: 18,
   };
   constructor(props) {
     super(props);
@@ -32,119 +33,20 @@ class ColorBoxesContainer extends Component {
     });
   }
   render() {
+    const boxes = Array.from({ length: this.props.numBoxes }).map(() => {
+      return (
+        <ColorBox
+          curColor={this.props.colors[getRandIdx(this.props.colors)]}
+          colors={colors}
+          click={this.handleClick}
+          shape={this.state.shape}
+        />
+      );
+    });
     return (
       <>
         <h1>Welcome! Click A Box To Change It's Color!</h1>
-        <div className="Color-boxes-container">
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-          <ColorBox
-            curColor={this.props.colors[getRandIdx(this.props.colors)]}
-            colors={colors}
-            click={this.handleClick}
-            shape={this.state.shape}
-          />
-        </div>
+        <div className="Color-boxes-container">{boxes}</div>
         <button onClick={this.toggleShape}>
           {this.state.shape === 'circle'
             ? 'Toggle To Squares'
