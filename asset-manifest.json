@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/color-boxes-app/static/css/main.507898ff.chunk.css",
-    "main.js": "/color-boxes-app/static/js/main.6e0cdd44.chunk.js",
-    "main.js.map": "/color-boxes-app/static/js/main.6e0cdd44.chunk.js.map",
+    "main.js": "/color-boxes-app/static/js/main.84c83089.chunk.js",
+    "main.js.map": "/color-boxes-app/static/js/main.84c83089.chunk.js.map",
     "runtime-main.js": "/color-boxes-app/static/js/runtime-main.e9737bba.js",
     "runtime-main.js.map": "/color-boxes-app/static/js/runtime-main.e9737bba.js.map",
     "static/js/2.12f8563a.chunk.js": "/color-boxes-app/static/js/2.12f8563a.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.e9737bba.js",
     "static/js/2.12f8563a.chunk.js",
     "static/css/main.507898ff.chunk.css",
-    "static/js/main.6e0cdd44.chunk.js"
+    "static/js/main.84c83089.chunk.js"
   ]
 }
